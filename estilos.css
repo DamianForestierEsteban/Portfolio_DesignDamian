@@ -1,0 +1,784 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estructura principal NO-RESPONSIVE */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 1360px;
+  margin: 0 auto;
+  overflow-x: auto;
+  background-color: #fff;
+}
+
+.contenedor {
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Barra de navegación */
+.barra-navegador {
+  background-color: #0f2c49;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barra-navegador img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.barra-navegador nav ul {
+  display: flex;
+  list-style: none;
+  gap: 120px;
+}
+
+.barra-navegador nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.barra-navegador nav a.active::after {
+  content: ""; 
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* Tipografías */
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+.nombre-design {
+  font-weight: 400;
+  color: #0f2c49;
+  font-size: 20px;
+}
+
+.nombre-damian {
+  font-weight: 700;
+  margin-left: 0px;
+  color: #0f2c49;
+  font-size: 20px;
+}
+
+/* Sección Presentación */
+.presentacion {
+  display: flex;
+  gap: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.presentacion .columna-izquierda {
+  width: 400px;
+}
+
+.presentacion .columna-izquierda img {
+  width: 400px;
+  height: auto;
+}
+
+.presentacion .columna-derecha {
+  width: 800px;
+}
+
+.presentacion .columna-derecha h1 {
+  font-size: 115px;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  font-size: 16px;
+  line-height: 1.3;
+  width: 470px;
+}
+
+/* Sección Acerca de mí */
+.acerca-de-mi {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.acerca-de-mi h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.acerca-bloques {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.bloque {
+  background: white;
+  border: 3px solid #0f2c49;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 25px 0px rgb(15 44 73);
+}
+
+.bloque h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.bloque ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bloque li {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.iconos {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.iconos img {
+  width: 40px;
+  height: 40px;
+}
+
+/* CTA Proyectos */
+.cta-proyectos {
+  padding: 60px 0;
+  position: relative;
+}
+
+.cta-proyectos h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.texto-izquierda {
+  padding-left: 50px;
+}
+
+.cta-proyectos em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cta-proyectos p {
+  margin: 20px 0;
+}
+
+.cta-proyectos .btn-proyectos {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0f2c49;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-proyectos .btn-proyectos:hover {
+  background-color: #2ab7da;
+}
+
+.volver-arriba {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  font-size: 14px;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.volver-arriba a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid #0f2c49;
+  border-radius: 30%;
+  color: #0f2c49;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.volver-arriba a:hover {
+  background-color: #0f2c49;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.iconos-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.iconos-footer img {
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
+.iconos-footer img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.linea-footer {
+  height: 22px;
+  background-color: #0f2c49;
+  margin-top: 20px;
+}
+
+
+/* ACERCA DE MI-INICIO*/
+.acerca-de-mi {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.acerca-de-mi h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.acerca-bloques {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.bloque {
+  background: white;
+  border: 3px solid  #0f2c49;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 25px 0px rgb(15 44 73);
+}
+
+.bloque h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.bloque ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bloque li {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.iconos {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 24px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.iconos img {
+  width: 40px;
+  height: 40px;
+}
+/* ACERCA DE MI-FINAL*/
+
+
+
+/* 
+   CTA DE PROYECTOS */
+.cta-proyectos {
+  padding: 60px 0;
+  position: relative;
+}
+
+.cta-proyectos h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.texto-izquierda {
+  padding-left: 50px;
+}
+
+.cta-proyectos em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cta-proyectos p {
+  margin: 20px 0;
+}
+
+.cta-proyectos .btn-proyectos {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0f2c49;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.cta-proyectos .btn-proyectos:hover {
+  background-color: #2ab7da;
+}
+
+.volver-arriba {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  font-size: 14px;
+  text-align: center;
+  padding-right: 50px;
+}
+
+.volver-arriba a {
+  display: inline-block; /* Asegura que el botón sea bloque */
+  padding: 8px 16px; /* Espacio interno */
+  border: 2px solid #0f2c49; /* Contorno azul */
+  border-radius: 30%; /* Bordes redondeados */
+  color: #0f2c49; /* Color del texto */
+  text-decoration: none; /* Elimina subrayado */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.volver-arriba a:hover {
+  background-color: #0f2c49; /* Cambia el fondo al hacer hover */
+  color: #fff; /* Cambia el texto a blanco al hacer hover */
+}
+
+
+
+/* APARTADO DE CONTACTO-INICIO */
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form h1 {
+    font-size: 48px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.intro, .alternative {
+    margin-bottom: 5px;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.separator {
+    height: 2px;
+    background-color: #0f2c49;
+    margin: 30px 0;
+}
+
+/* Estilos de los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0f2c49;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-shadow: 0 2px 0px rgb(15 44 73);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Estilos de los botones - Versión modificada */
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-submit, .btn-clear {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+/* Botón Enviar */
+.btn-submit {
+    background-color: #0f2c49;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #2ab7da;
+}
+
+/* Botón Borrar */
+.btn-clear {
+    background-color: #000000;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #737373;
+}
+
+/* Efecto para los botones al hacer clic */
+.btn-submit:active, .btn-clear:active {
+    transform: translateY(1px);
+}
+
+
+
+
+
+
+/* APARTADO-PROYECTOS-INICIO */
+
+/* ESTILOS PROYECTOS - TEXTO IZQ/IMAGEN DER */
+.contenedor {
+    width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.contenido-proyectos {
+    padding: 60px 0 60px 50px; 
+}
+
+.proyecto-simple {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+/* TEXTO A LA IZQUIERDA */
+.texto-proyecto {
+    width: 50%;
+    box-sizing: border-box;
+    order: 1; /* Fuerza posición izquierda */
+}
+
+/* IMAGEN A LA DERECHA */
+.imagen-proyecto {
+    width: 50%;
+    box-sizing: border-box;
+    order: 2; /* Fuerza posición derecha */
+    padding-left: 30px; /* Espacio entre texto e imagen */
+}
+
+.imagen-proyecto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid #0f2c49;
+    box-shadow: 0 25px 0px rgb(15 44 73);
+    max-width: 100%;
+}
+
+/* Estilos restantes iguales */
+.categoria {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0f2c49;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.proyecto-simple h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    color: #0f2c49;
+    margin-bottom: 30px;
+}
+
+.descripcion p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-behance {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0f2c49;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-behance:hover {
+    background-color: #2ab7da;
+}
+
+/* ESTILOS BOTÓN SERVICIOS */
+.btn-servicios {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #0f2c49; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    margin-right: 20px; 
+}
+
+.btn-servicios:hover {
+    background-color: #2ab7da; 
+    transform: translateY(-2px);
+    
+}
+
+
+/* APARTADO-PROYECTOS-FINAL*/
+
+
+
+
+
+
+/* APARTADO-SERVICIOS-INICIO*/
+
+.contenido-servicios {
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.titulo-servicios {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.descripcion-servicios {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.descripcion-servicios em {
+    font-style: italic;
+    color: #2ab7da;
+}
+
+.grid-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.servicio {
+    width: 300px;
+}
+
+.icono-servicio {
+    margin-bottom: 25px;
+}
+
+/* Tamaño de iconos */
+.icono {
+    width: 150px;  
+    height: 150px; 
+}
+
+.servicio h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0f2c49;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+* ESTILOS PARA BOTÓN CONTÁCTAME */
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    width: 1360px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white; 
+}
+
+/* BOTÓN CONTÁCTAME */
+.btn-contactame {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #0f2c49; /* Azul oscuro original */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+   
+}
+
+.btn-contactame:hover {
+    background-color: #2ab7da; /* Azul claro al hacer hover */
+    transform: translateY(-2px);
+    
+}
+
+.contenedor-boton {
+    width: 1260px; /* 1360 - 100px (50px cada lado) */
+    margin: 80px auto 40px;
+    text-align: center;
+}
+/* APARTADO-SERVICIOS-FINAL*/
+
+
+
+
+/* FOOTER GRUPO/INICIO */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+}
+
+.iconos-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; 
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.iconos-footer img {
+  width: 23px;
+  height: 23px;
+  display: block;
+}
+
+.iconos-footer img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.linea-footer {
+  height: 22px;
+  background-color: #0f2c49;
+  margin-top: 20px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER GRUPO/FIN*/
